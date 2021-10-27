@@ -1,0 +1,151 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  border-top: solid 10px brown;
+  border-bottom: double 10px brown;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0;
+  border: brown solid 5px;
+  border-radius: 10px;
+  background-color: white;
+
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 50px;
+}
+
+nav {
+  display: flex;
+  gap: 42px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+nav a:link,
+nav a:visited {
+  font-size: large;
+  padding: 4px;
+  border: solid 5px burlywood;
+  border-radius: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+/* nav a:link {
+  font-weight: bold;
+  text-decoration: none;
+  color: brown;
+  margin: 0 20px;
+  border: brown solid;
+  padding: 4px;
+}
+
+nav a:visited {
+  color: brown;
+}
+
+nav a:hover {
+  font-weight: bolder;
+  font-size: large;
+  text-decoration: underline brown;
+} */
+
+h2 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 40px;
+}
+
+p {
+  width: 550px;
+  font-size: large;
+  line-height: 25px;
+}
+
+img {
+  width: 550px;
+  height: 420px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+footer p {
+  width: 1200px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+  .main-container {
+    width: 650px;
+    margin: 0 auto;
+    border-left: 10px brown solid;
+  }
+
+  body {
+    border: none;
+  }
+
+  header {
+    position: relative;
+    left: 50%;
+  }
+
+  h2 {
+    position: relative;
+    left: 50%;
+  }
+
+  .container1 {
+    display: block;
+    position: relative;
+    left: 50%;
+  }
+
+  .gridobj {
+    margin-bottom: 40px;
+    width: 650px;
+  }
+
+  img {
+    width: 650px;
+  }
+
+  p {
+    width: 650px;
+  }
+
+  footer {
+    left: 50%;
+  }
+}

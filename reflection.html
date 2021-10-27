@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reflection and Wireframe</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          Reflection Time
+          <p>This page does not scale only the main page :)</p>
+        </h1>
+        <nav>
+          <a href="index.html"> Back Home</a>
+        </nav>
+      </header>
+      <div class="container1">
+        <div>
+          <h2>Wireframe BIG screens</h2>
+          <img
+            src="imgz/IMG_6796.JPG"
+            alt="the Wireframe of the website Summer 21 website"
+          />
+        </div>
+
+        <div>
+          <h2>Wireframe Mobile screens</h2>
+          <img src="imgz/IMG_6801.JPG" alt="Wireframe mobile" />
+        </div>
+      </div>
+      <h2>Reflection</h2>
+      <p>
+        When we started, we immediately thought of intuitive and simple designs
+        to implement. We went with a “mobile-last” policy since we thought that
+        would be easier with the HTML and CSS skills we had at our disposal. It
+        dawned on us that putting pictures in a grid and then for mobile putting
+        them on a flow would be a cool challenge. Hence the wireframes being as
+        you can see above. <br />
+        <br />
+
+        When it came to actually implementing the design, we can say it went
+        decently for the big screens. The split grid-ish layout resulted in us
+        having to learn a lot about how the grid works and we can say that we
+        were very satisfied with the outcome. On the other hand implementing the
+        design for mobile proved challenging seeing as both centering the page
+        and the text were difficult. In the end you can still see that the
+        footer is not entirely centered and we simply couldn’t understand why.
+        After trying for several hours to center the footer we just gave up and
+        decided it wasn’t a big deal. <br />
+        <br />
+
+        <strong>To conclude</strong> we thought the assignment was good fun, and
+        we learnt alot while making this website. Not everything is perfect at
+        the moment like we explained with the footer in the mobile version of
+        the website. Anyhow we feel like we did everything we could and we are
+        happy with the results.
+      </p>
+    </div>
+  </body>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    .container1 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav a:link,
+    nav a:visited {
+      font-weight: bold;
+      text-decoration: none;
+      color: brown;
+      margin: 0 20px;
+      border: brown solid;
+      padding: 4px;
+    }
+
+    nav a:hover {
+      font-weight: bolder;
+      font-size: larger;
+      text-decoration: underline brown;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 50px;
+    }
+
+    h1 p {
+      font-size: 26px;
+      font-weight: normal;
+    }
+
+    header {
+      margin-bottom: 50px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      border: brown solid 5px;
+      background-color: white;
+    }
+
+    img {
+      width: 600px;
+      height: 760px;
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 40px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 25px;
+    }
+  </style>
+</html>
